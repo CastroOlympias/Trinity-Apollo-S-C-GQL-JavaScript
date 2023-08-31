@@ -1,0 +1,18 @@
+.navBar {
+    position: fixed;
+    bottom: 0px;
+    z-index: 9999;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: green;
+    padding: 10px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.navMenuButtons {
+    padding: 3px;
+    font-size: 20px;
+}

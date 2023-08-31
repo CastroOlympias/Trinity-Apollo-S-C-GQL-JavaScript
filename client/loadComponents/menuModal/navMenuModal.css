@@ -1,0 +1,59 @@
+.navMenuModal-opened {
+    position: fixed;
+    padding: 12px;
+    top: 50px;
+    bottom: 100px;
+    width: 90%;
+    box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
+    border-radius: 25px;
+    background-color: rgba(172, 255, 47, 0.644);
+}
+
+@keyframes navMenuModal-fade-in {
+    from {
+        background-color: transparent;
+        box-shadow: transparent;
+    }
+    to {
+        background-color: rgba(172, 255, 47, 0.644);
+        box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
+    }
+}
+.navMenuModal-opened {
+    animation-name: navMenuModal-fade-in;
+    animation-duration: .7s;
+}
+
+.navMenuModal-closed {
+    position: fixed;
+    padding: 12px;
+    top: 50px;
+    bottom: 100px;
+    width: 90%;
+    box-shadow: transparent;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+@keyframes navMenuModal-fade-out {
+    from {
+        background-color: rgba(172, 255, 47, 0.644);
+        box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
+    }
+    to {
+        background-color: transparent;
+        box-shadow: transparent;
+    }
+}
+
+.navMenuModal-closed {
+    animation-name: navMenuModal-fade-out;
+    animation-duration: .5s;
+}
+
+.navMenuModalOffClickClose {
+    background-color: transparent;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
